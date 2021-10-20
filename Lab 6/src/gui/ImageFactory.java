@@ -1,4 +1,4 @@
-package igu;
+package gui;
 
 import javax.swing.ImageIcon;
 
@@ -12,7 +12,7 @@ public class ImageFactory {
 	private static final String IMAGEN_SPACE = "/img/space.jpg";
 	private static final String IMAGEN_SHOOT = "/img/shot.png";
 
-	public static ImageIcon getImagen(Cell cell) {
+	public static ImageIcon getImage(Cell cell) {
 		if (cell instanceof Invader)
 			return loadImage(IMAGEN_INVADER);
 		else if (cell instanceof Space)
